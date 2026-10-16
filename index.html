@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#855c73" />
+    <meta
+      name="description"
+      content="A little birthday surprise made with love."
+    />
+    <title>A Little Letter For You ♡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Intro / envelope -->
+    <section class="intro" id="intro" aria-label="Open your letter">
+      <div class="intro-inner">
+        <p class="intro-kicker">A LITTLE SOMETHING FOR YOU</p>
+        <button
+          class="envelope-button"
+          id="openLetter"
+          aria-label="Open the letter"
+        >
+          <span class="open-label">open me!</span>
+          <span class="envelope">
+            <span class="envelope-back"></span>
+            <span class="letter-peek">♡</span>
+            <span class="envelope-flap"></span>
+            <span class="envelope-front"></span>
+            <span class="wax-seal">♥</span>
+          </span>
+          <span class="tap-hint">tap the envelope ♡</span>
+        </button>
+      </div>
+      <span class="intro-flower flower-left">✿</span
+      ><span class="intro-flower flower-right">✿</span>
+    </section>
+
+    <main id="mainContent" class="site hidden">
+      <div class="floral-rail left-rail" aria-hidden="true"></div>
+      <div class="floral-rail right-rail" aria-hidden="true"></div>
+
+      <!-- Hero -->
+      <section class="hero section-pad" id="top">
+        <p class="eyebrow">TO THE MOST BEAUTIFUL GIRL!</p>
+        <h1 class="her-name" id="herName">Sara</h1>
+        <p class="hero-subtitle">HAPPY BIRTHDAY, LOVE</p>
+        <div class="hero-photos">
+          <!-- Replace hero-1.jpg and hero-2.jpg with your own photos (keep the same names) -->
+          <figure class="polaroid hero-photo photo-one">
+            <img
+              src="assets/photos/hero-1.jpg"
+              alt="A favorite photo"
+              onerror="this.parentElement.classList.add('placeholder-photo')"
+            />
+            <figcaption>my favorite person ♡</figcaption>
+          </figure>
+          <figure class="polaroid hero-photo photo-two">
+            <img
+              src="assets/photos/hero-2.jpg"
+              alt="Another favorite photo"
+              onerror="this.parentElement.classList.add('placeholder-photo')"
+            />
+            <figcaption>my favorite smile ♡</figcaption>
+          </figure>
+        </div>
+        <div class="hero-note">Every little thing is better with you.</div>
+        <a class="scroll-cue" href="#video"
+          >scroll to see your surprise <span>↓</span></a
+        >
+      </section>
+
+      <!-- Video -->
+      <section class="video-section section-pad" id="video">
+        <p class="eyebrow">A LITTLE PIECE OF US</p>
+        <h2 class="section-title">Our little movie <span>♡</span></h2>
+        <div class="video-frame">
+          <!-- Put your video at assets/video/our-video.mp4, or change the source below -->
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            poster="assets/photos/video-poster.jpg"
+          >
+            <source src="assets/video/our-video.mp4" type="video/mp4" />
+            Your browser does not support this video. Please try another
+            browser.
+          </video>
+          <p class="video-placeholder-note">
+            Your video goes here — add <b>our-video.mp4</b> to assets/video/
+          </p>
+        </div>
+        <p class="soft-caption">A few seconds, a thousand memories.</p>
+      </section>
+
+      <!-- Gallery -->
+      <section class="gallery-section section-pad" id="memories">
+        <p class="eyebrow">LITTLE MOMENTS, BIG FEELINGS</p>
+        <h2 class="gallery-title">MY FAV PICS<br />OF YOU</h2>
+        <div class="memory-grid">
+          <!-- Add/replace photos in assets/photos. Keep the filenames or edit each src. -->
+          <figure class="polaroid memory memory-a">
+            <img
+              src="assets/photos/memory-1.jpg"
+              alt="Memory one"
+              onerror="this.parentElement.classList.add('placeholder-photo')"
+            />
+            <figcaption>one of my favorite days</figcaption>
+          </figure>
+          <figure class="polaroid memory memory-b">
+            <img
+              src="assets/photos/memory-2.jpg"
+              alt="Memory two"
+              onerror="this.parentElement.classList.add('placeholder-photo')"
+            />
+            <figcaption>your smile, always</figcaption>
+          </figure>
+          <figure class="polaroid memory memory-c">
+            <img
+              src="assets/photos/memory-3.jpg"
+              alt="Memory three"
+              onerror="this.parentElement.classList.add('placeholder-photo')"
+            />
+            <figcaption>just us ♡</figcaption>
+          </figure>
+          <figure class="polaroid memory memory-d">
+            <img
+              src="assets/photos/memory-4.jpg"
+              alt="Memory four"
+              onerror="this.parentElement.classList.add('placeholder-photo')"
+            />
+            <figcaption>a moment to keep</figcaption>
+          </figure>
+          <figure class="polaroid memory memory-e">
+            <img
+              src="assets/photos/memory-5.jpg"
+              alt="Memory five"
+              onerror="this.parentElement.classList.add('placeholder-photo')"
+            />
+            <figcaption>my favorite view</figcaption>
+          </figure>
+          <figure class="polaroid memory memory-f">
+            <img
+              src="assets/photos/memory-6.jpg"
+              alt="Memory six"
+              onerror="this.parentElement.classList.add('placeholder-photo')"
+            />
+            <figcaption>and a million more</figcaption>
+          </figure>
+        </div>
+        <p class="gallery-footnote">
+          If I could keep one thing forever, it would be moments like these.
+        </p>
+      </section>
+
+      <!-- Letter -->
+      <section class="letter-section section-pad" id="letter">
+        <p class="eyebrow">A LETTER FROM MY HEART TO YOURS</p>
+        <article class="vintage-paper">
+          <div class="paper-inner">
+            <div class="paper-heart">♡</div>
+            <h2>To my favorite person,</h2>
+            <p>
+              Happy birthday to the most beautiful girl, my beautiful girl!
+              Thank you for all the happiness, comfort, and laughter you've
+              brought into my life.
+            </p>
+            <p>
+              Having you by my side is truly one of the most beautiful things in
+              my life, and I'm grateful for you every single day.
+            </p>
+            <p>
+              You make ordinary moments feel special, and somehow you make the
+              world feel a little softer just by being in it. I hope this new
+              year of your life brings you the same warmth and happiness you
+              give to everyone around you.
+            </p>
+            <p>
+              I love you so much, and I hope you never forget how special you
+              are to me. Happy birthday, sweetheart. ♡
+            </p>
+            <p class="letter-signoff">
+              Always yours, <span id="signatureName">Ahmed</span> ♡
+            </p>
+          </div>
+        </article>
+        <button class="read-again" id="readAgain">
+          READ IT AGAIN <span>♡</span>
+        </button>
+        <p class="ending-note">made with love, just for you.</p>
+      </section>
+      <footer>♡ &nbsp; a tiny website for my favorite person &nbsp; ♡</footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

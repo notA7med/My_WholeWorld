@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 240" width="80" height="240">
+<defs>
+ <g id="flower">
+  <ellipse cx="0" cy="-9" rx="5" ry="10" fill="#e7d8ef" stroke="#a99bb9" stroke-width="1"/>
+  <ellipse cx="8" cy="-3" rx="5" ry="10" transform="rotate(55 8 -3)" fill="#c8b5dc" stroke="#8e7d9f" stroke-width="1"/>
+  <ellipse cx="5" cy="7" rx="5" ry="10" transform="rotate(130 5 7)" fill="#eee2f0" stroke="#a99bb9" stroke-width="1"/>
+  <ellipse cx="-5" cy="7" rx="5" ry="10" transform="rotate(-130 -5 7)" fill="#c4b2d8" stroke="#8e7d9f" stroke-width="1"/>
+  <ellipse cx="-8" cy="-3" rx="5" ry="10" transform="rotate(-55 -8 -3)" fill="#e4d5ed" stroke="#a99bb9" stroke-width="1"/>
+  <circle r="4" fill="#e9d19c"/>
+ </g>
+ <g id="leaf"><ellipse rx="5" ry="12" fill="#82917a" stroke="#65735f" stroke-width="1" transform="rotate(40)"/></g>
+</defs>
+<rect width="80" height="240" fill="none"/>
+<path d="M39 0 C15 35 60 52 32 83 S61 131 35 158 S56 206 38 240" fill="none" stroke="#71866e" stroke-width="3"/>
+<g transform="translate(36 20)"><use href="#leaf" x="-10" y="8"/><use href="#leaf" x="11" y="21"/><use href="#flower" x="0" y="0"/></g>
+<g transform="translate(29 73) scale(.85)"><use href="#leaf" x="14" y="-12"/><use href="#leaf" x="-13" y="14"/><use href="#flower" x="0" y="0"/></g>
+<g transform="translate(43 125) scale(1.05)"><use href="#leaf" x="-12" y="10"/><use href="#leaf" x="14" y="17"/><use href="#flower" x="0" y="0"/></g>
+<g transform="translate(30 180) scale(.9)"><use href="#leaf" x="13" y="-14"/><use href="#leaf" x="-12" y="12"/><use href="#flower" x="0" y="0"/></g>
+<g transform="translate(41 225) scale(.75)"><use href="#leaf" x="-12" y="8"/><use href="#flower" x="0" y="0"/></g>
+</svg>
